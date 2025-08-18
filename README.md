@@ -2,33 +2,40 @@
 ====================================================
 
 💻 **Přeměňte svůj Linux Mint na Windows XP!**  
-MintXP vám umožní zažít ikonický vzhled Windows XP přímo na Linux Mint. Včetně vzhledu pracovního prostředí, ikon, kurzoru a dokonce i legendárního „Winver“.  
+Zažijte ikonický vzhled Windows XP přímo na Linux Mint – autentické motivy, ikony, ukazatele myši a legendární „Winver“ pro kompletní retro zážitek.
 
 ✨ **Co projekt obsahuje:**
 - 🎨 **Theme** – motivy, ikony a ukazatele myši pro autentický Windows XP vzhled.  
-- 🪟 **Winver** – skript pro zobrazení informace o systému ve stylu Winver z Windows XP.
+- 🪟 **Winver** – skript pro zobrazení informace o systému ve stylu Winver z Windows XP.  
+- ⚡ **Install Script** – automatizovaný skript `install.sh`, který vše nastaví bez ručního kopírování souborů.
 
 🔧 **Jak nastavit MintXP:**
 
-1. Naklonujte repositář do adresáře který si vyberete
+1. Naklonujte repositář do vámi vybraného adresáře:
    ```bash
    git clone https://github.com/Kubays120/MintXP.git
    cd MintXP
-2. Otevřete naklonovanou složku
-3. Otevřete složku Theme a zkopírujte obsah .icons a .themes do svého domovského adresáře /home.
-4. Nastavte motivy vzhledu v Linux Mint:
-     - Ukazatel myši: ModernXP
-     - Aplikace: Windows XP Luna
-     - Ikony: Windows-XP-3.1
-     - Pracovní plocha: Windows XP Luna
-5. Otevřete složku Winver a zkopírujte ji také do /home.
-6. Spusťte skript winner.py pomocí Python 3:
-   ```bash
-   python3 /home/Winver/winner.py
-7. Pokud se soubor spustil správně tak ho nastavte aby se po kliknutí na něj spustil v python3
-     Pravý klik na soubor -> otevřít s -> Jiná aplikace... -> do dolního řádku nastavte: "python3" -> Nastavit jako výchozí -> Budiž -> Winver by se měl            spustit (pokud ne tak klikněte na jeho ikonu)
    
-**‼️ VAROVÁNÍ ‼️**
---------------------
+2. Udělejte instalační skript spustitelný a spusťte ho:
+   ```bash
+   chmod +x install.sh
+   ./install.sh
+3. Skript automaticky:
+   - Zkopíruje .icons a .themes do domovského adresáře /home/$USER.
+   - Zkopíruje složku Winver do /home/$USER.
+   - Nastaví motivy vzhledu Linux Mint:
+      - Ukazatel myši: ModernXP
+      - Aplikace: Windows XP Luna
+      - Ikony: Windows-XP-3.1
+   - Pracovní plocha: Windows XP Luna
+   - Vytvoří spouštěč pro Winver, který jej spustí přes Python 3.
+4. Winver lze kdykoli spustit přes příkaz:
+      ```bash
+      python3 ~/Winver/winner.py
+   nebo z menu Linux Mint, pokud použijete spouštěč vytvořený skriptem.
 
-Všechny soubory nechte na svém místě nikam jinam je nepřemísťujte, mohlo by to mít špatné následky - Program nemusí fungovat nebo se jeho část nenačte. Postupujte přesně podle návodu, pokud by jste zkopírovali soubor někam jinam nemuselo by to fungovat.
+  **‼️ VAROVÁNÍ ‼️**
+----------------------
+
+Nepřemisťujte soubory z jejich cílových adresářů – program by mohl přestat fungovat. 
+Postupujte přesně podle instalačního skriptu a instrukcí.
