@@ -27,8 +27,8 @@ Zažijte ikonický vzhled Windows XP přímo na Linux Mint – autentické motiv
       - Ukazatel myši: ModernXP
       - Aplikace: Windows XP Luna
       - Ikony: Windows-XP-3.1
-   - Pracovní plocha: Windows XP Luna
-   - Vytvoří spouštěč pro Winver, který jej spustí přes Python 3.
+      - Pracovní plocha: Windows XP Luna
+      - Vytvoří spouštěč pro Winver, který jej spustí přes Python 3.
 4. Winver lze kdykoli spustit přes příkaz:
       ```bash
       python3 ~/Winver/winner.py
